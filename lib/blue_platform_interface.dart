@@ -23,7 +23,15 @@ abstract class BluePlatform extends PlatformInterface {
     _instance = instance;
   }
 
-  Future<String?> getPlatformVersion() {
+  Future<String?> getPairedDevices() {
+    throw UnimplementedError('platformVersion() has not been implemented.');
+  }
+
+  Future<String?> getConnectedDevices() {
+    throw UnimplementedError('platformVersion() has not been implemented.');
+  }
+
+  Future<bool?> isConnected(String address) {
     throw UnimplementedError('platformVersion() has not been implemented.');
   }
 }
